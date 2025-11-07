@@ -1,0 +1,144 @@
+/* =============== ORDERS PAGE MAIN CONTAINER =============== */
+.orders-page {
+  padding: 40px 60px;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =============== PAGE HEADING =============== */
+.orders-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2f3640;
+  margin-bottom: 35px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* =============== ORDER LIST =============== */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* =============== SINGLE ORDER CARD =============== */
+.order-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* =============== LEFT SIDE (IMAGE + DETAILS) =============== */
+.order-header {
+  display: flex;
+  gap: 18px;
+  flex: 1;
+}
+
+.order-header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  background: #f1f2f6;
+  padding: 10px;
+}
+
+.order-items {
+  font-weight: 600;
+  color: #353b48;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.order-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #2f3640;
+}
+
+.order-address {
+  margin: 6px 0;
+}
+
+.order-address p {
+  font-size: 13px;
+  color: #636e72;
+  line-height: 1.3;
+}
+
+.order-phone {
+  font-size: 14px;
+  color: #40739e;
+  font-weight: 500;
+}
+
+/* =============== RIGHT SIDE (SUMMARY + STATUS) =============== */
+.order-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 220px;
+}
+
+.order-footer p {
+  font-size: 14px;
+  color: #2d3436;
+  font-weight: 500;
+}
+
+/* =============== STATUS DROPDOWN =============== */
+.order-status {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #dcdde1;
+  font-weight: 600;
+  color: #2f3640;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 180px;
+  text-align: center;
+}
+
+.order-status:hover {
+  background-color: #dcdde1;
+}
+
+/* =============== EMPTY STATE =============== */
+.no-orders {
+  text-align: center;
+  font-size: 18px;
+  color: #7f8fa6;
+  margin-top: 40px;
+}
+
+/* =============== RESPONSIVE =============== */
+@media (max-width: 900px) {
+  .order-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-footer {
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .order-status {
+    width: 100%;
+  }
+}
