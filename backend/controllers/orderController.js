@@ -1,4 +1,3 @@
-import { data } from "react-router-dom";
 import orderModel from "../models/orderModels.js";
 import userModel from "../models/userModels.js";
 import Stripe from "stripe";
